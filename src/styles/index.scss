@@ -4,6 +4,37 @@ body {
   margin: 0;
 }
 
+.searchbar {
+  position: relative;
+  margin-left: 35%;
+}
+
+.link{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
 .item-link {
   cursor: pointer;
 }
+
+.item__preview{
+  display: block;
+  float: left;
+  width: 50%;
+
+}
+
+.item__title {
+  display: flex;
+  align-items: flex-start;
+
+}
+
