@@ -2,8 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
-element {
-  --main-bg-color: #e2e3ec;
+div {
+  --main-bg-color: #c9ead9;
+  --second-bg-color: #d8daef;
 }
 
 body {
@@ -17,7 +18,7 @@ h1{
 }
 
 h2 {
-  text-align: center;
+  text-align: center ;
 }
 .searchbar {
   width: 490px;
@@ -70,13 +71,13 @@ h2 {
 .item {
   display: flex;
   flex-direction: column;
-  background-color: #3f4253;
-  color: #e2e3ec;
+  background-color: var(--main-bg-color);
+  color: #fff;
 
 }
 
 .item:nth-child(2n) {
-  background-color: black;
+  background-color: var(--second-bg-color);
 
 }
 
@@ -85,18 +86,26 @@ h2 {
   
 }
 
+.item__date-created {
+  text-align: center;
+}
+
+.item__description {
+  text-align: center;
+}
+
+.item__keywords {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
 .item__preview{
   display: block;
-  float: left;
-  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
   
 }
 
-
-.item__keyboard {
-  
-
-  border-radius: 10px;
-	background: none;
-	
-}
