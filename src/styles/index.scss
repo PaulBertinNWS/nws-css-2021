@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 div {
-  --main-bg-color: #c9ead9;
-  --second-bg-color: #d8daef;
+  --main-bg-color: #424F4F;
+  --second-bg-color: #1C1D1F;
 }
 
 body {
@@ -12,9 +12,18 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #141518;
+}
+
 h1{
+  margin-left: 5%;
+  margin-top: 3%;
   text-align: center;
   font-weight: bold;
+  color: #fff;
 }
 
 h2 {
@@ -28,20 +37,19 @@ h2 {
 }
 
 .searchbar__input {
-  margin: 0 auto;
+  margin-top: 5%;
   width: 100%;
   height: 45px;
   padding: 0 20px;
   font-size: 1rem;
-  border: 1px solid #D0CFCE;
+  border: 2px solid #fff;
   outline: none;
- 
-   
+  border-radius: 10px;
+  background: none;
+  color: #fff;  
 }
 
-
 .searchbar__btn {
-  
   position: relative;
   left: 10%;
 	min-width: 150px;
@@ -50,22 +58,35 @@ h2 {
 	margin: 1em;
 	padding: 1em 2em;
   border-radius: 10px;
+  border : 2px solid #fff;
+  color: #fff;
 	background: none;
-	
+}
 
+.searchbar__btn:hover {
+  background-color: #fff;
+  color: black;
 }
 
 .link{
-  position: relative;
-  top: 19%;
-  left: 50%;
-  min-width: 150px;
+  position: absolute;
+  left: 65%;
+  top: 10%;
+  max-height: 50px;
+	min-width: 150px;
 	max-width: 250px;
 	display: block;
 	margin: 1em;
 	padding: 1em 2em;
   border-radius: 10px;
+  border : 2px solid #fff;
 	background: none;
+  color: #fff;
+}
+
+.link:hover{
+  background-color: #fff;
+  color:black
 }
 
 .item {
@@ -92,12 +113,17 @@ h2 {
 
 .item__description {
   text-align: center;
+  padding: 5%;
 }
 
 .item__keywords {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
+  border : 2px solid #fff;
+  color: #fff;
+	background: none;
   
 }
 
